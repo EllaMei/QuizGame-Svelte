@@ -1,0 +1,103 @@
+/*title page style*/
+
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    text-align: center;
+    font-size:40px;
+}
+
+.buttontitle {
+    /*Centering button*/
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+/*question style*/
+
+/*Question number style*/
+.question_num {
+    text-align: center;
+    font-size: 28px;
+}
+
+/*Question style*/
+p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.buttons1, .buttons2, .button1{
+    /*Puts buttons in the center of screen horizontally*/
+    display: flex;
+    justify-content: center;
+}
+
+/* this is the same for all buttons across the website at this moment */
+.button {
+    /*Button background color*/
+    background-color: green;
+    /*Button text color*/
+    color: white;
+    /*Button space around text*/
+    padding: 15px 32px;
+    /*Centering text inside button*/
+    text-align: center;
+    /*Button rounding*/
+    border-radius: 8px;
+    /*Button border*/
+    border: 2px solid black;
+    text-decoration:none;
+    display: inline-block;
+    /*Text size*/
+    font-size: 20px;
+    /*Width of the button*/
+    width: 25%;
+    /*How fast the color changes*/
+    margin: 20px;
+    height: 85px;
+  }
+  
+  /*changing the button when hovering over it*/
+.button:hover{
+    /*How fast the color changes when hovered over*/
+    transition-duration: 0.4s;
+    /*What color the button changes to when mouse over*/
+    background-color:Blue;
+    /*What color the button's text changes to*/
+    color:yellow;
+    cursor: pointer;
+}
+
+/*changing the button background colour and text color when clicked on*/
+.button:active{
+    transition-duration: 0s;
+    background-color: rgb(12, 207, 12);
+    /*Text color*/
+    color: rgb(121, 121, 121);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+  
+/*result style for the individual questions, not the results page*/
+
+/*Style for the questions result*/
+.result_title {
+    text-align: center;
+    font-size:30px;
+}
