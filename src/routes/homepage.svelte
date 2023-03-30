@@ -1,8 +1,8 @@
 <script>
+    // Importing components
     import Startbutton from "./startbutton.svelte";
-    
-
-    
+    // Defining Title variable
+    let Title = "Kangan Quiz";
 </script>
 
 <style>
@@ -11,13 +11,16 @@
     display: flex;
     justify-content: center;
 }
-h1 {
-    text-align: center;
-    font-size:40px;
+/* Styling the title of Quiz */
+    h1 {
+        text-align: center;
+        font-size:40px;
 }
 </style>
 
-<h1>Kangan Quiz</h1>
+<!-- Creating title -->
+<h1>{Title}</h1>
+<!-- Using imported component and passing on:click event on to another component -->
 <div class=buttons>
     <Startbutton on:click/>
 </div>

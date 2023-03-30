@@ -27,4 +27,5 @@
   }
 </style>
 
+<!-- Creating a button with an on:click event that can be used by another component -->
 <button class="button" on:click>Start</button>

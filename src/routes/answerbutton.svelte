@@ -1,4 +1,5 @@
 <script>
+    // Defining variable, giving default value and allowing value to be filled by other components
     export let answer = 'answer';
 </script>
 
@@ -28,4 +29,5 @@
   }
 </style>
 
+<!-- Creating a button with a on:click event that will be used by a different component and a text that will be defined by another component with the default being 'answer' -->
 <button class="button" on:click>{answer}</button>
