@@ -21,9 +21,8 @@
     display: inline-block;
     /*Text size*/
     font-size: 20px;
-    /*Width of the button*/
+    /*Size of the button*/
     width: 25%;
-    /*How fast the color changes*/
     margin: 20px;
     height: 85px;
   }
