@@ -1,8 +1,8 @@
 <script>
     // Defining variables and allowing them to be filled by other components
-    export let questions;
-    export let correct_answers;
-    export let incorrect_answers;
+    export let questions = ['In which suburb is the Digital Traineeship Programme being run?','Which Train Station is the closest to the Cremorne Campus of Kangan Institute?','What is the capital city of Australia?'];
+    export let correct_answers = ['Cremorne','Richmond','Canberra'];
+    export let incorrect_answers = ['South Yarra','Bendigo','Dandenong','Frankston','Cranburne','Berwick','Beaconsfield','Adelaide','Brisbane','Perth','Paris','Melbourne','Sydney','Newcastle'];
     export let i = 0
     
     //Importing component 
