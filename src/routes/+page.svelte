@@ -24,16 +24,31 @@
         admin_visibility = 0
         quiz_visibility = 0
         question_visibility = 0
+        username=""
+        password=""
     }
 </script>
 
+<style>
+    .logout {
+        display:flex;
+        justify-content:flex-end;
+    }
+</style>
+
 
 {#if admin_visibility === 1}
+    <div class="logout">
+    <Loginbutton on:click={handleLogOut} login="Log Out"/>
+    </div>
     <!-- Show Admin Page Here -->
-    <Loginbutton on:click={handleLogOut} login="Log Out"/>
+    
 {:else if quiz_visibility === 1}
-    <QuizStart/>
+    <div class="logout">
     <Loginbutton on:click={handleLogOut} login="Log Out"/>
+    </div>
+    <QuizStart/>
+    
 {:else}
     <LoginPage on:click={handleLogIn} bind:username={username} bind:password={password} />
 {/if}

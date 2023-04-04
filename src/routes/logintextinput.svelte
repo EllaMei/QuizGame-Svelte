@@ -2,5 +2,10 @@
     export let placeholder = input;
     export let value;
 </script>
+<style>
+    .login {
+        text-align:center;
+    }
+</style>
 
-<input type="text" bind:value placeholder={placeholder}>
+<input class="login" type="text" bind:value placeholder={placeholder}>

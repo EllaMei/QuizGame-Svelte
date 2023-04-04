@@ -22,7 +22,7 @@
     /*Text size*/
     font-size: 20px;
     /*Size of the button*/
-    width: 25%;
+    /* width: 25%; */
     margin: 20px;
     height: 85px;
   }

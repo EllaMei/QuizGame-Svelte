@@ -1,6 +1,7 @@
 <script>
     import Loginbutton from "./loginbutton.svelte";
     import Logintextinput from "./logintextinput.svelte";
+    import Title from "./title.svelte";
     export let username;
     export let password;
     // export let admin_visibility = 0;
@@ -19,8 +20,18 @@
     // }
 </script>
 
+<style>
+    .login {
+        display: flex;
+        justify-content: center;
+    }
+</style>
+<Title/>
+
+<div class = "login">
 <Logintextinput placeholder="Username" bind:value={username}/>
+<br>
 <Logintextinput placeholder="Password" bind:value={password}/>
+
 <Loginbutton on:click login="Log In"/><!--={handleLogIn}-->
-{username}
-{password}
+</div>
