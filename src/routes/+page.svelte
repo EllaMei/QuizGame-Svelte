@@ -9,20 +9,20 @@
 
     function handleLogIn() {
         if (username === 'Admin' && password === 'password') {
-            // username = "";
-            // password = "";
+            username = "";
+            password = "";
             admin_visibility = 1;
         }
         else if (password === "password") {
-            // username="";
-            // pasword="";
+            username="";
+            password="";
             quiz_visibility = 1;
             
         }
         else {
             alert("Incorrect username or password");
-            // username="";
-            // password="";
+            username="";
+            password="";
         }
         
     }
