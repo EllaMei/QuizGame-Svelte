@@ -1,6 +1,7 @@
 <script>
     import Loginbutton from "./loginbutton.svelte";
     import Logintextinput from "./logintextinput.svelte";
+    import Passwordtextinput from "./passwordtextinput.svelte";
     import Title from "./title.svelte";
     export let username;
     export let password;
@@ -31,7 +32,7 @@
 <div class = "login">
 <Logintextinput placeholder="Username" bind:value={username}/>
 <br>
-<Logintextinput placeholder="Password" bind:value={password}/>
+<Passwordtextinput placeholder="Password" bind:value={password}/>
 
 <Loginbutton on:click login="Log In"/><!--={handleLogIn}-->
 </div>
