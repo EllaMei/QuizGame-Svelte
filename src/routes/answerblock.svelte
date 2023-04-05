@@ -9,6 +9,7 @@
 <style>
     .buttons {
     /*Puts buttons in the center of screen horizontally*/
+    width:100%;
     display: flex;
     justify-content: space-around;
 }

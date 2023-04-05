@@ -26,7 +26,13 @@
     margin: 20px;
     height: 85px;
   }
+  .buttons {
+    /*Puts buttons in the center of screen horizontally*/
+    width: 100%;
+    display:flex;
+    justify-self:center;
+  }
 </style>
 
 <!-- Creating a button with a on:click event that will be used by a different component and a text that will be defined by another component with the default being 'answer' -->
-<button class="button" on:click>{answer}</button>
+<div class="buttons"><button class="button" on:click>{answer}</button></div>
