@@ -2,11 +2,13 @@
     // Defining variables and allowing them to be filled by other components
     export let questions = ['In which suburb is the Digital Traineeship Programme being run?','Which Train Station is the closest to the Cremorne Campus of Kangan Institute?','What is the capital city of Australia?'];
     export let i = 0
+    export let answeredID;
     
     //Importing component 
     import Answerblock from "./answerblock.svelte";
 
     export let answers;
+    export let answerID;
 
 </script>
 
@@ -27,5 +29,5 @@ h2 {
         passing on on:click event to another component
         Giving values for the different buttons to show
      -->
-    <Answerblock on:click answer = {answers} /> 
+    <Answerblock answer = {answers} answerID = {answerID} bind:answeredID = {answeredID} on:click/> 
     
