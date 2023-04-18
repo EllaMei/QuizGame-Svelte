@@ -1,12 +1,13 @@
 <script>
     // Defining variables and allowing them to be filled by other components
     export let questions = ['In which suburb is the Digital Traineeship Programme being run?','Which Train Station is the closest to the Cremorne Campus of Kangan Institute?','What is the capital city of Australia?'];
-    export let correct_answers = ['Cremorne','Richmond','Canberra'];
-    export let incorrect_answers = ['South Yarra','Bendigo','Dandenong','Frankston','Cranburne','Berwick','Beaconsfield','Adelaide','Brisbane','Perth','Paris','Melbourne','Sydney','Newcastle'];
     export let i = 0
     
     //Importing component 
     import Answerblock from "./answerblock.svelte";
+
+    export let answers;
+
 </script>
 
 <style>
@@ -26,10 +27,5 @@ h2 {
         passing on on:click event to another component
         Giving values for the different buttons to show
      -->
-    <Answerblock on:click answer={ [
-        correct_answers[i],
-        incorrect_answers[i*3],
-        incorrect_answers[(i*3+1)],
-        incorrect_answers[(i*3+2)]
-    ]}/> 
+    <Answerblock on:click answer = {answers} /> 
     
